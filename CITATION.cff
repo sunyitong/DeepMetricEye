@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the associated ISMAR 2023 paper."
-title: "DeepMetricEye / DPDG-Env"
-repository-code: "https://github.com/sunyitong/DPDG-Env"
+title: "DeepMetricEye"
+repository-code: "https://github.com/sunyitong/DeepMetricEye"
 url: "https://yitongsun.com/deepmetriceye"
 license: GPL-3.0
 authors:

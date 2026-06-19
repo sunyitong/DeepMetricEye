@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve DeepMetricEye / DPDG-Env.
+Thanks for helping improve DeepMetricEye.
 
 Good contribution areas include:
 

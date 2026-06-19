@@ -1,4 +1,4 @@
-# DeepMetricEye / DPDG-Env
+# DeepMetricEye
 
 [中文](README.zh-CN.md) | English
 
@@ -60,7 +60,7 @@ The included `train_data_minimal/` directory is a small RGB/depth sample for ver
 - Project page: <https://yitongsun.com/deepmetriceye>
 - Paper DOI: <https://doi.org/10.1109/ISMAR59233.2023.00058>
 - arXiv: <https://arxiv.org/abs/2311.07235>
-- Code repository: <https://github.com/sunyitong/DPDG-Env>
+- Code repository: <https://github.com/sunyitong/DeepMetricEye>
 
 ## Data Access
 

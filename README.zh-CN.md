@@ -1,4 +1,4 @@
-# DeepMetricEye / DPDG-Env
+# DeepMetricEye
 
 中文 | [English](README.md)
 
@@ -61,7 +61,7 @@ jupyter notebook model.ipynb
 - 项目页：<https://yitongsun.com/deepmetriceye>
 - DOI：<https://doi.org/10.1109/ISMAR59233.2023.00058>
 - arXiv：<https://arxiv.org/abs/2311.07235>
-- 仓库：<https://github.com/sunyitong/DPDG-Env>
+- 仓库：<https://github.com/sunyitong/DeepMetricEye>
 
 ## 数据访问
 
