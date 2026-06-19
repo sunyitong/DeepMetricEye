@@ -1,33 +1,34 @@
-## Dynamic Periocular Data Generation (DPDG) Environment
+# Dynamic Periocular Data Generation (DPDG) Environment
 
-### Introduction
+This directory documents the Unreal Engine component of DeepMetricEye. The DPDG environment uses Unreal Engine 5.2 and MetaHuman avatars to synthesize paired periocular RGB images and ground-truth depth maps for VR eye-region depth-estimation research.
 
-The Dynamic Periocular Data Generation (DPDG) environment is a specialised synthetic data generation tool, designed to bridge the data collection challenges faced when working on periocular depth estimation in VR.
+## Overview
 
-### Environment Overview
+- **Engine:** Unreal Engine 5.2
+- **Avatar system:** UE MetaHuman
+- **Output:** synchronized periocular RGB images and depth maps
+- **Purpose:** generate diverse training samples from limited real facial scans while reducing the burden of sensitive participant-data collection
 
-- **Platform**: Unreal Engine 5.2
-- **Purpose**: Synthesize thousands of training images from a minimal set of human facial scan data, tailored for periocular depth estimation.
+## Setup
 
-### Features
+1. Install Unreal Engine 5.2.
+2. Download the environment package:
+   <https://drive.google.com/file/d/1DDyOThmrLEkm6d67v70p_Sb_0alSmXqN/view?usp=sharing>
+3. Unzip the package.
+4. Open `HumanDataset.uproject` in Unreal Engine 5.2.
+5. Confirm that required MetaHuman assets, camera components, lighting, and export directories are loaded correctly.
 
-1. **High-Fidelity Synthesis**: Utilizes advanced rendering techniques to create lifelike periocular images.
-2. **Customization**: The environment is adjustable to simulate various lighting conditions, facial expressions, and eye movements.
-3. **Compatibility with Depth Estimation Model**: The synthesized data is pre-formatted to be directly compatible with our periocular depth estimation model.
+## Typical Workflow
 
-### Getting Started
+1. Import or select a MetaHuman identity.
+2. Configure headset geometry and eye-oriented camera placement.
+3. Adjust lighting and camera parameters to match the target headset condition.
+4. Render periocular RGB images.
+5. Export the corresponding depth maps.
+6. Use the generated pairs with the model pipeline in [`../DepthEstimationModel/`](../DepthEstimationModel/).
 
-1. **Prerequisites**: Ensure you have Unreal Engine 5.2 installed and properly set up on your machine.
-2. **Installation**: 
-   - Please download the zipped file via: https://drive.google.com/file/d/1DDyOThmrLEkm6d67v70p_Sb_0alSmXqN/view?usp=sharing
-   - Unzip the file
-   - Navigate to the DPDG subfolder.
-   - Import "HumanDataset.uproject" in UE 5.2
+## Notes
 
-3. **Usage**: 
-4. 
-   Currently under editing. Detailed steps will be provided soon.
-
-### Feedback and Contribution
-
-We value the insights and contributions from the broader community. For any feedback, issues, or enhancements, please open a ticket in the main repository. If you're interested in contributing directly, feel free to submit a pull request.
+- The environment is intended for research reproduction and synthetic-data generation.
+- Raw participant scans are sensitive and are not distributed through this repository.
+- If you use the environment in research, cite the DeepMetricEye paper listed in the root README.

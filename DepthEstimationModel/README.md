@@ -1,22 +1,49 @@
-## Depth Estimation Model for Periocular Regions in VR
+# Depth Estimation Model
 
-### Introduction
+This directory contains the PyTorch/Jupyter implementation used for periocular depth estimation in DeepMetricEye.
 
-Amidst the growing concerns of eye strain and potential visual impairments associated with prolonged VR usage, the necessity for tools that can aid in understanding and alleviating these challenges is paramount. This depth estimation model specifically targets the periocular regions, offering researchers and developers a method to understand and quantify the depth-related aspects of this critical area.
+## Overview
 
-### Model Overview
+- **Task:** estimate periocular depth maps from monocular VR eye-camera imagery
+- **Backbone:** optimized U-Net 3+ style encoder-decoder architecture
+- **Input:** preprocessed single-channel periocular image
+- **Output:** predicted periocular depth map
+- **Sample data:** minimal public RGB/depth pairs under `train_data_minimal/`
 
-- **Architecture**: U-Net 3+ deep learning backbone.
-- **Purpose**: Estimate measurable periocular depth maps.
-- **Compatibility**: Designed to work seamlessly with any VR headset equipped with an eye-oriented monocular camera.
+## Quick Start
 
-### Features
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install torch torchvision pillow matplotlib scipy tqdm numpy jupyter
+jupyter notebook model.ipynb
+```
 
-1. **High Precision**: Evaluated on a diverse sample set, the model demonstrated impressive accuracy in measuring random inter-mark-point distances around the eyes and assessing pupil diameter.
-2. **Metric Basis**: Offers a foundation for protocols and guidelines related to light stimulus calculation and medical observations in VR.
-3. **Integration with DPDG**: The model can be trained effectively using data synthesized from the Dynamic Periocular Data Generation (DPDG) environment.
+Open `model.ipynb` and run the cells in order. The notebook includes model definition, data loading, training, and evaluation utilities.
 
-### Getting Started
+## Minimal Dataset
 
-1. **Dependencies**: Python 3.11, Pytorch 2
-2. **Usage**: Using jupyter notebook to open "model.ipynd", and follow the instraction to train the model.
+`train_data_minimal/` contains a small public sample for checking the training and inference pipeline. It is not the full research dataset.
+
+Expected structure:
+
+```text
+train_data_minimal/
+  train/
+    rgb/
+    depth/
+  val/
+    rgb/
+    depth/
+  test/
+    rgb/
+    depth/
+```
+
+## Inference Note
+
+`use_model.py` is an early inference script and may require path updates before use. For reproducible experiments, prefer the notebook workflow until the script is refactored into a stable CLI.
+
+## Citation
+
+If you use this model or the accompanying sample data, please cite the DeepMetricEye paper listed in the root README.

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated ISMAR 2023 paper."
+title: "DeepMetricEye / DPDG-Env"
+repository-code: "https://github.com/sunyitong/DPDG-Env"
+url: "https://yitongsun.com/deepmetriceye"
+license: GPL-3.0
+authors:
+  - family-names: Sun
+    given-names: Yitong
+  - family-names: Zhou
+    given-names: Zijian
+  - family-names: Diels
+    given-names: Cyriel
+  - family-names: Asadipour
+    given-names: Ali
+preferred-citation:
+  type: conference-paper
+  title: "DeepMetricEye: Metric Depth Estimation in Periocular VR Imagery"
+  authors:
+    - family-names: Sun
+      given-names: Yitong
+    - family-names: Zhou
+      given-names: Zijian
+    - family-names: Diels
+      given-names: Cyriel
+    - family-names: Asadipour
+      given-names: Ali
+  collection-title: "2023 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)"
+  publisher: IEEE
+  year: 2023
+  start: 434
+  end: 443
+  doi: "10.1109/ISMAR59233.2023.00058"
