@@ -4,7 +4,7 @@ Please do not open public issues containing participant data, raw facial scans, 
 
 For sensitive reports, contact:
 
-<yitong.sun@network.rca.ac.uk>
+<hi@yitongsun.com>
 
 ## Data Privacy
 
