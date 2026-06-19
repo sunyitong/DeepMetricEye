@@ -13,8 +13,6 @@ The repository contains the Dynamic Periocular Data Generation (DPDG) environmen
 
 ![DeepMetricEye pipeline](docs/assets/deepmetriceye-pipeline.png)
 
-The figure above is cropped from the paper PDF for repository presentation.
-
 ## Why This Exists
 
 Eye-oriented cameras in modern VR headsets can observe pupil and periocular features, but their 2D outputs are not enough for metric measurements such as pupil diameter, periocular deformation, or light-stimulus evaluation. DeepMetricEye bridges that gap with:

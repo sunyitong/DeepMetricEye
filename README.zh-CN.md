@@ -12,8 +12,6 @@
 
 ![DeepMetricEye pipeline](docs/assets/deepmetriceye-pipeline.png)
 
-上图截取自论文 PDF，用作仓库展示首图。
-
 ## 项目价值
 
 现代 VR 头显中的眼部相机通常可以获取瞳孔、眼周轮廓与 gaze 相关的 2D 信息，但这些相对二维特征无法直接支持瞳孔直径、眼周形变或光刺激标准计算等 metric measurement。DeepMetricEye 的目标是用单目图像重建可测量的眼周深度图，并用 UE MetaHuman 环境缓解真实人脸数据采集困难。
